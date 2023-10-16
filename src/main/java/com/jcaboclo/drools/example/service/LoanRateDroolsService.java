@@ -1,11 +1,9 @@
 package com.jcaboclo.drools.example.service;
 
-
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.jcaboclo.drools.example.model.LoanApplicant;
 import com.jcaboclo.drools.example.model.LoanRate;
 
@@ -25,3 +23,4 @@ public class LoanRateDroolsService {
         return loanRate;
     }
 }
+

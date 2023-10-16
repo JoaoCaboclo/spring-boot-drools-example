@@ -4,7 +4,6 @@ import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.jcaboclo.drools.example.model.OrderDiscount;
 import com.jcaboclo.drools.example.model.OrderRequest;
 

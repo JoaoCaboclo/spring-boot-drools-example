@@ -29,9 +29,18 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!-- Spring Boot Starter Test - Provides support for testing Spring Boot applications -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- JUnit 5 - JUnit 5 is the testing framework used for writing JUnit tests -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.8.0</version> <!-- Use the latest version -->
 			<scope>test</scope>
 		</dependency>
 
@@ -48,6 +57,11 @@
 		<dependency>
 			<groupId>org.drools</groupId>
 			<artifactId>drools-decisiontables</artifactId>
+			<version>${drools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kie</groupId>
+			<artifactId>kie-ci</artifactId>
 			<version>${drools.version}</version>
 		</dependency>
 	</dependencies>

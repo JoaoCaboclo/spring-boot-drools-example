@@ -1,3 +1,5 @@
+package com.jcaboclo.drools.example
+
 import com.jcaboclo.drools.example.model.OrderRequest;
 import com.jcaboclo.drools.example.model.CustomerType;
 
