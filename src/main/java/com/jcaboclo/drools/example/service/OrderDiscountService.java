@@ -14,6 +14,7 @@ public class OrderDiscountService {
     private KieContainer kieContainer;
 
     public OrderDiscount getDiscount(OrderRequest orderRequest) {
+
         OrderDiscount orderDiscount = new OrderDiscount();
         KieSession kieSession = kieContainer.newKieSession();
         kieSession.setGlobal("orderDiscount", orderDiscount);
