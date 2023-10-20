@@ -21,22 +21,35 @@ public class OrderDiscountController {
         OrderDiscount discount = orderDiscountService.getDiscount(orderRequest);
         return new ResponseEntity<>(discount, HttpStatus.OK);
     }
-}
+
+    /*
+
+        Forma de chamada pelo Postman - definir o tipo de arquivo da regra: "DRL" ou "XLSX"
+        customerType pode ser: "LOYAL" ou "NEW"
 
 
-
-/*
-       {
-           "customerNumber": "1235",
-           "age": 8,
-           "amount": 50000,
-           "customerType": "LOYAL"
-        }
+        http://localhost:8080/get-discount
 
         {
-           "customerNumber": "1235",
-           "age": 65,
-           "amount": 500,
-           "customerType": "NEW"
+            "customerNumber": "1235",
+                "age": 45,
+                "amount": 500,
+                "customerType": "NEW",
+                "fileRuleType": "DRL"
+
         }
-*/
+
+        ou
+
+        {
+            "customerNumber": "1235",
+                "age": 45,
+                "amount": 500,
+                "customerType": "NEW",
+                "fileRuleType": "XLSX"
+
+        }
+     */
+
+}
+
